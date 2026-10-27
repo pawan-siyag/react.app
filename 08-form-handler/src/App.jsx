@@ -1,0 +1,23 @@
+import React from 'react'
+
+const App = () => {
+ 
+  const handler = (e) =>{
+          e.preventDefault()
+           console.log('form is submitted');
+           
+  }
+
+  return (
+    <div>
+      <form onSubmit={(e)=>{
+        handler(e)
+      }}>
+        <input type="text" placeholder="Enter your name" />
+        <button>Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default App
